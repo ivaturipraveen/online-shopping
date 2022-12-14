@@ -1,0 +1,239 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All-Products RedStore |Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body onchange="altotal();fultotal();">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="home.html"><img src="images/logo.png" width="125px" /></a>
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li id="hovnav"><a href="home.html">HOME</a></li>
+            <li id="hovnav"><a href="products.html">Products</a></li>
+            <li id="hovnav"><a href="#about">About</a></li>
+            <li id="hovnav"><a href="#about">Contact</a></li>
+            <li id="hovnav"><a href="login.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="25px" height="25px"
+        /></a>
+        <img src="images/menu.png" class="menuicon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <!-- ---------cart iteam details------------->
+    <div class="actualconfirm">
+      <div class="confirm" id="confirm">
+        <span style="font-size: 18px; color: black"
+          >Do you wish to delete?</span
+        >
+        <div>
+          <div class="buttons">
+            <button style="border-radius: 0px 0px 0px 10px">Cancel</button>
+            <button
+              style="border-radius: 0px 0px 10px 0px"
+              onclick="deleteitem()"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr id="1strow">
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-1.jpg" />
+              <div>
+                <p>Red Printed T-shirt</p>
+                <small>Price:$50.00</small>
+                <br />
+                <a href="" onclick="remove()">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input
+              type="number"
+              id="inum1"
+              onchange="stotal1(50.00)"
+              value="1"
+              min="1"
+            />
+          </td>
+          <td>$<span id="i1">50.00</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-2.jpg" />
+              <div>
+                <p>Red Printed T-shirt</p>
+                <small>Price:$75.00</small>
+                <br />
+                <a href="" onclick="remove()">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input
+              type="number"
+              id="inum2"
+              onchange="stotal2(75.00)"
+              value="1"
+              min="1"
+            />
+          </td>
+          <td>$<span id="i2">75.00</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-3.jpg" />
+              <div>
+                <p>Red Printed T-shirt</p>
+                <small>Price:$75.00</small>
+                <br />
+                <a href="" onclick="remove()">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input
+              type="number"
+              id="inum3"
+              onchange="stotal3(75.00)"
+              value="1"
+              min="1"
+            />
+          </td>
+          <td>$<span id="i3">75.00</span></td>
+        </tr>
+      </table>
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$<span id="subtot">200</span></td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$<span id="tax">35.00</span></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$<span id="fultot">230.00</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="buybut">
+      <a href="home.html"><button>Back to Home</button></a>
+      <a href=""><button>Buy Now!!</button></a>
+    </div>
+    <!------footer ------>
+    <div class="footer" id="about">
+      <div class="container">
+        <div class="out">
+          <div class="footer-in4">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="applogo">
+              <img src="images/play-store.png" alt="playstore" />
+              <img src="images/app-store.png" alt="appstore" />
+            </div>
+          </div>
+          <div class="footer-in5">
+            <img src="images/logo-white.png" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benifits of
+              Sports Accessible to Many.
+            </p>
+          </div>
+          <div class="footer-in6">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>return Policy</li>
+              <li>Join Affliates</li>
+            </ul>
+          </div>
+          <div class="footer-in7">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022</p>
+      </div>
+    </div>
+    <!-- js for toggle menu ------>
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight == "0px";
+
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight == "200px";
+        } else {
+          menuitems.style.maxHeight == "0px";
+        }
+      }
+      function stotal1(k) {
+        let item = document.getElementById("inum1").value;
+        document.getElementById("i1").innerHTML = k * item;
+      }
+      function stotal2(k) {
+        let item = document.getElementById("inum2").value;
+        document.getElementById("i2").innerHTML = k * item;
+      }
+      function stotal3(k) {
+        let item = document.getElementById("inum3").value;
+        document.getElementById("i3").innerHTML = k * item;
+      }
+      function altotal() {
+        var x = document.getElementById("i1").innerHTML;
+        var y = document.getElementById("i2").innerHTML;
+        var z = document.getElementById("i3").innerHTML;
+        document.getElementById("subtot").innerHTML =
+          Number(x) + Number(y) + Number(z);
+      }
+      function fultotal() {
+        var x = document.getElementById("tax").innerHTML;
+        var tot1 = document.getElementById("subtot").innerHTML;
+        document.getElementById("fultot").innerHTML = Number(x) + Number(tot1);
+      }
+      // function remove() {
+      //   alert("Do you want to remove?");
+      // }
+      function remove() {
+        actualconfirm.style.display = "block";
+      }
+      function deleteitem() {}
+    </script>
+  </body>
+</html>

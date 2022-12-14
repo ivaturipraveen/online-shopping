@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Account page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="home.html"><img src="images/logo.png" width="125px"/></a>
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li id="hovnav"><a href="home.html">HOME</a></li>
+            <li id="hovnav"><a href="products.html">Products</a></li>
+            <li id="hovnav"><a href="#about">About</a></li>
+            <li id="hovnav"><a href="#about">Contact</a></li>
+            <li id="hovnav"><a href="login.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="25px" height="25px"
+        /></a>
+        <img src="images/menu.png" class="menuicon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <div class="account-page">
+      <div class="container">
+        <div class="out">
+          <div class="in ac-img">
+            <img src="images/image1.png" width="60%" />
+          </div>
+
+          <div class="in">
+            <div class="form-container">
+              <div class="form-button">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator" />
+              </div>
+              <form id="Loginform">
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <button type="Submit" class="button">Login</button>
+                <a href="">Forget Password</a>
+              </form>
+              <form id="Regform">
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="Password" />
+                <button type="Submit" class="button">Register</button>
+                <a href="">Forget Password</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer loginfooter" id="about">
+      <div class="container">
+        <div class="out">
+          <div class="footer-in4">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="applogo">
+              <img src="images/play-store.png" alt="playstore" />
+              <img src="images/app-store.png" alt="appstore" />
+            </div>
+          </div>
+          <div class="footer-in5">
+            <img src="images/logo-white.png" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benifits of
+              Sports Accessible to Many.
+            </p>
+          </div>
+          <div class="footer-in6">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affliates</li>
+            </ul>
+          </div>
+          <div class="footer-in7">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022</p>
+      </div>
+    </div>
+    <script>
+      var Loginform = document.getElementById("Loginform");
+      var Regform = document.getElementById("Regform");
+      var Indicator = document.getElementById("Indicator");
+
+      function login() {
+        Regform.style.transform = "translateX(300px)";
+        Loginform.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+      function register() {
+        Regform.style.transform = "translateX(0px)";
+        Loginform.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+    </script>
+  </body>
+</html>
